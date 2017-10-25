@@ -1,0 +1,9 @@
+<h1>Movies</h1>
+
+<div *ngFor="let movie of movies | async" style="width: 300px;">
+	<movie-details [movie]='movie'></movie-details>
+</div>
+
+<div>
+	<button type="button" class="button btn-danger" (click)='deleteMovies()'>Delete All</button>
+</div>
